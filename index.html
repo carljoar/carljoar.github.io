@@ -1,8 +1,9 @@
 <HTML>
+<BODY>
 <HEAD>
 <TITLE> CJ on the internets </TITLE>
-</HEAD>
-<BODY BGCOLOR="#ffffcc">
+</HEAD >
+<!-- colors: #ffffcc (yellow), #f6f5d9 (shaded yellow), #0c0b00 (black)-->
 <meta charset="utf-8" /> 
 <!--link rel="stylesheet" type="text/css" href="layout.css" /-->
 <style type="text/css">
@@ -10,21 +11,28 @@
 		font-size:18px;
 		font-family:Verdana, Geneva, sans-serif;
 	}
+	body {
+      background-color: black;
+	}
+	div.background {
+      max-width: 22cm;
+	  margin: auto;
+	  border: none;
+      background-color: white;
+      z-index: 1;
+	}
 	div.toread {
 	  max-width: 20cm;
 	  margin: auto;
 	  border: none;
+	  padding: 1cm;
+	  z-index: 2;
 	}
 </style>
-<hr>
 
-<BODY>
-  <H2 align="center" id="topofpage"> 2020 </H2>
-  <HR>
+<div class="background">
   <div class="toread">
-    
-  </div>
-  <div class="toread">
+  	<p>The content of this page is not officially approved by Chalmers or GU.</p>
     <br>
       <b>Carl-Joar Karlsson</b><BR>
       Family name: Karlsson <BR>
@@ -89,7 +97,7 @@
   </div>
   <div class="toread"><hr>
   	<h2 id="Library">Library</h2>
-    Books are more interesting if they are read by many, so please feel free to borrow a book from the list.
+    Books are more interesting if they are discussed and debated, so please feel free to borrow a book from the list by sending an e-mail.
   	<h3>Fiction</h3>
       Adichie, Chimamanda Ngozi, Americanah<br>
       Adichie, Chimamanda Ngozi, En halv gul sol<br>
@@ -125,19 +133,19 @@
       Twain, Mark, Tom Sawyer<br>
   	<h3>Non-fiction</h3>
   	  Babelon et al, <i>Introduciton to Classical Integrable Systems</i><br>
-  	  Peskin & Schroeder, <i>Introduction to Quantum Field Theory</i>
+  	  Bransden & Joachain, <i>Physics of Atoms and Molecules</i><br>
+  	  Peskin & Schroeder, <i>Introduction to Quantum Field Theory</i><br>
+  	  Younes, <i>Shapes and diffeomorphisms</i>
   </div>
   <div class="toread"><hr>
     <h2 id="Tech">Tech tips</h2>
       <h3>Software</h3>
       <p>Syncthing is great for file synchronization: <a href="https://syncthing.net/">syncthing.net/</a></p>
-      <h3>Presentations</h3>
-      <p>Here's my beamer template: <a href="./SBB_mk_1.zip">ZIP-archive</a></p>
-      <p>Here's the motivation for it: <a href="https://youtu.be/Iwpi1Lm6dFo">Youtube</a></p>
-      <h3>Mail</h3>
-      <p>To avoid recipients seding e-mails to lists, let lists be bcc. Also, write who's your intended recipient so that anyone receiving the e-mail will understand if it was sent to a list by mistake.</p>
+      <!--h3>Mail</h3>
+      <p>To avoid recipients seding e-mails to lists, let lists be bcc. Also, write who's your intended recipient so that anyone receiving the e-mail will understand if it was sent to a list by mistake.</p-->
   </div>
   <!--div data-include="header"></div-->
   <!--div data-include="tips"></div-->
+</div>
 </BODY>
 </HTML>
